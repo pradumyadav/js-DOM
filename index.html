@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent_box{
+            display: flex;
+        }
+
+        .box{
+            border:2px solid black;
+            width: 150px;
+            height:150px;
+            margin: 10px;
+            Background-color:chocolate;
+           
+        }
+    </style>
+</head>
+<body>
+<h3>Q1.Write the code to access element which is having is as "text" ?</h3>
+<pre>
+ Ans=  document.getElementById("text");
+</pre>
+<hr/>
+<h3>Q2.Write the code to access element which is having tag as "h1"</h3>
+<pre>
+    Ans= document.getElementsByTagName("h1");
+</pre>
+<hr/>
+<h3>Q3.Write the code to access element which is having class as "box"</h3>
+<pre>
+    Ans= document.getElementsByClassName("h1");
+</pre>
+<hr/>
+<h3>Q4.Change the heading from "Hello" to "Hello World" using DOM function ?
+    <h1 id="text_change">Hello</h1>
+    <button onclick="byclick()"> Change Text</button>
+</h3>
+<hr/>
+<h3>Q5. Create an HTML page having content as Hello World and a button named Replace Text.When user will click on this button page content should be changed to "Welcome to Elevation academy" ?
+<br></br>
+<h1 id="word_change">Hello World</h1>
+<button onclick="change()">Replace Text</button>    
+</h3>
+
+<h3>Q6. Add one style attribute and give text colors as red and id attribute and give the id value as "heading" in the above given h1 tag using DOM function ?
+    <h1 id="by_change_event">Hello Every One !</h1>
+</h3>
+<hr/>
+<h3>Q7.Create three cards on HTML page and arrange them using flex propery in row or horizontal direction and also creat button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</h3>
+    <div class="parent_box">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <br>
+    <button onclick="click_to_change()"id="direction_change"> direction change</button>
+    <script src="./index.js"></script>
+    <hr/>
+    <h3>Q9.Write code to implement timer clock using JS --display HH:MM:SS --the time should keep updating every second.</h3>
+    <h1 class="timer">hii</h1>
+    <button class="alarm" onclick="setalarm()"> by click</button>
+</body>
+</html>
